@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercícios JavaScript</title>
+</head>
+<body>
+  <h2>Exercícios de JavaScript</h2>
+
+  <script>
+
+    console.log("===== Exercício 1 =====");
+    let numero = 0;
+
+    if (numero) {
+      console.log("A variável é truthy");
+    } else {
+      console.log("A variável é falsy");
+    }
+
+    console.log("===== Exercício 2 =====");
+    let idade = prompt("Digite sua idade:");
+    if (idade >= 18) {
+      console.log("Maior de idade");
+    } else {
+      console.log("Menor de idade");
+    }
+
+    console.log("===== Exercício 3 =====");
+    let nota = prompt("Digite a nota:");
+
+    if (nota >= 90) {
+      console.log("Aprovado com excelência");
+    } else if (nota >= 60) {
+      console.log("Aprovado");
+    } else {
+      console.log("Reprovado");
+    }
+
+    console.log("===== Exercício 4 =====");
+    let nota2 = prompt("Digite novamente a nota para o exercício 4:");
+
+    let resultado = (nota2 >= 90)
+      ? "Aprovado com excelência"
+      : (nota2 >= 60)
+        ? "Aprovado"
+        : "Reprovado";
+
+    console.log(resultado);
+
+    console.log("===== Exercício 5 =====");
+    let saldo = 100;
+    let valorCompra = 80;
+
+    if (saldo >= valorCompra) {
+      console.log("Compra realizada com sucesso!");
+    } else {
+      console.log("Saldo insuficiente para realizar a compra.");
+    }
+  </script>
+</body>
+</html>
